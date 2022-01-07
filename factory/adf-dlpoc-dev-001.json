@@ -1,0 +1,9 @@
+{
+	"name": "adf-dlpoc-dev-001",
+	"location": "westeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "f9a43b54-0342-473a-9d8d-c8ddf1ef8bfe",
+		"tenantId": "e8701075-0d9e-4ea1-991d-5a0d110a5d29"
+	}
+}
