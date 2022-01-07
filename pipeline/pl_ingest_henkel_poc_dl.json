@@ -78,7 +78,7 @@
 								}
 							},
 							"linkedServiceName": {
-								"referenceName": "ls_adls_poc_dl",
+								"referenceName": "ls_db_pocdl",
 								"type": "LinkedServiceReference"
 							}
 						},
@@ -104,7 +104,7 @@
 								}
 							},
 							"linkedServiceName": {
-								"referenceName": "ls_adls_poc_dl",
+								"referenceName": "ls_db_pocdl",
 								"type": "LinkedServiceReference"
 							}
 						},
@@ -130,7 +130,7 @@
 								}
 							},
 							"linkedServiceName": {
-								"referenceName": "ls_adls_poc_dl",
+								"referenceName": "ls_db_pocdl",
 								"type": "LinkedServiceReference"
 							}
 						}
