@@ -1,0 +1,9 @@
+{
+	"name": "hd01-df",
+	"location": "westeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "22aa7c3a-1e02-4e82-9906-631a6163e5e5",
+		"tenantId": "e8701075-0d9e-4ea1-991d-5a0d110a5d29"
+	}
+}
