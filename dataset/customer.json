@@ -16,7 +16,7 @@
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"fileName": {
-					"value": "@concat('CUSTOMER-',formatDateTime(dataset().p_date_exported,'yyyy-MM-dd'),'.csv')",
+					"value": "@concat('CUST_ATTR-',formatDateTime(dataset().p_date_exported,'yyyy-MM-dd'),'.csv')",
 					"type": "Expression"
 				},
 				"folderPath": "INTEGRATION_PRODUCT/CRM",
