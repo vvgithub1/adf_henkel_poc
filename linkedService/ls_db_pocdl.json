@@ -1,0 +1,13 @@
+{
+	"name": "ls_db_pocdl",
+	"properties": {
+		"annotations": [],
+		"type": "AzureDatabricks",
+		"typeProperties": {
+			"domain": "https://adb-3821726397520005.5.azuredatabricks.net",
+			"authentication": "MSI",
+			"workspaceResourceId": "/subscriptions/857ffa54-599a-44e4-a078-701ffe7501d1/resourceGroups/rg-hdpgovernance-dev-001/providers/Microsoft.Databricks/workspaces/dbr-dlpoc-dev-westeu-001",
+			"existingClusterId": "0107-133443-xwy5vqgk"
+		}
+	}
+}
