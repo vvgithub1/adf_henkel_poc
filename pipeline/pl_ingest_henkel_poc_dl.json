@@ -69,7 +69,7 @@
 							},
 							"userProperties": [],
 							"typeProperties": {
-								"notebookPath": "/Users/vladimir.visnovsky@gmail.com/ingest/ingest_mapping",
+								"notebookPath": "/Shared/delta_lake_poc/ingest/ingest_mapping",
 								"baseParameters": {
 									"p_date_exported": {
 										"value": "@formatDateTime(pipeline().parameters.p_date_exported, 'yyyy-MM-dd')",
@@ -95,7 +95,7 @@
 							},
 							"userProperties": [],
 							"typeProperties": {
-								"notebookPath": "/Users/vladimir.visnovsky@gmail.com/ingest/ingest_survey",
+								"notebookPath": "/Shared/delta_lake_poc/ingest/ingest_survey",
 								"baseParameters": {
 									"p_date_exported": {
 										"value": "@formatDateTime(pipeline().parameters.p_date_exported, 'yyyy-MM-dd')",
@@ -121,7 +121,7 @@
 							},
 							"userProperties": [],
 							"typeProperties": {
-								"notebookPath": "/Users/vladimir.visnovsky@gmail.com/ingest/ingest_customer",
+								"notebookPath": "/Shared/delta_lake_poc/ingest/ingest_customer",
 								"baseParameters": {
 									"p_date_exported": {
 										"value": "@formatDateTime(pipeline().parameters.p_date_exported, 'yyyy-MM-dd')",
