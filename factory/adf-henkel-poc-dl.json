@@ -1,0 +1,9 @@
+{
+	"name": "adf-henkel-poc-dl",
+	"location": "westeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "9b2b697f-b1f7-460f-9bbb-de3b4f028636",
+		"tenantId": "25cc0b17-4d49-4f54-bc96-d8b55ae4f441"
+	}
+}

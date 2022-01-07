@@ -1,0 +1,14 @@
+{
+	"name": "ls_adls_poc_dl",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureDatabricks",
+		"typeProperties": {
+			"domain": "https://adb-36447615882236.16.azuredatabricks.net",
+			"authentication": "MSI",
+			"workspaceResourceId": "/subscriptions/619c02db-9c74-4523-9e1e-1d761a373542/resourceGroups/rg_henkel_poc_dl/providers/Microsoft.Databricks/workspaces/henkel_poc_dl",
+			"existingClusterId": "1228-125337-4dhm6d7h"
+		}
+	}
+}

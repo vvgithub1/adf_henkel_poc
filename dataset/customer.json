@@ -1,0 +1,33 @@
+{
+	"name": "customer",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "pocdl_storage_raw",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"p_date_exported": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@concat('CUSTOMER-',formatDateTime(dataset().p_date_exported,'yyyy-MM-dd'),'.csv')",
+					"type": "Expression"
+				},
+				"folderPath": "INTEGRATION_PRODUCT/CRM",
+				"fileSystem": "raw"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
