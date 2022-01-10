@@ -1,0 +1,36 @@
+{
+	"name": "pl_dp_customer_churn__ref",
+	"properties": {
+		"activities": [
+			{
+				"name": "customer_refined",
+				"type": "DatabricksNotebook",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Shared/delta_lake_poc/ingest/refined/customer_refined",
+					"baseParameters": {
+						"p_exported_date": "@formatDateTime(pipeline().parameters.p_date_exported, 'yyyy-MM-dd')"
+					}
+				},
+				"linkedServiceName": {
+					"referenceName": "ls_db_pocdl",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"parameters": {
+			"p_exported_date": {
+				"type": "string"
+			}
+		},
+		"annotations": []
+	}
+}
