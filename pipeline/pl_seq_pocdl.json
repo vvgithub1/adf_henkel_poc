@@ -33,6 +33,81 @@
 						"p_date_exported": "@formatDateTime(pipeline().parameters.p_date_exported, 'yyyy-MM-dd')"
 					}
 				}
+			},
+			{
+				"name": "pl_dp_core_bus_entities__customer__tru",
+				"type": "ExecutePipeline",
+				"dependsOn": [
+					{
+						"activity": "pl_di_crm_cust_attr__stg",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "pl_dp_core_bus_entities__customer__tru",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"p_date_exported": "@formatDateTime(pipeline().parameters.p_date_exported, 'yyyy-MM-dd')"
+					}
+				}
+			},
+			{
+				"name": "pl_dp_customer_churn__tru",
+				"type": "ExecutePipeline",
+				"dependsOn": [
+					{
+						"activity": "pl_dp_customer_churn__stg",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "pl_dp_customer_churn__tru",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"p_date_exported": "@formatDateTime(pipeline().parameters.p_date_exported, 'yyyy-MM-dd')"
+					}
+				}
+			},
+			{
+				"name": "pl_dp_customer_churn__ref",
+				"type": "ExecutePipeline",
+				"dependsOn": [
+					{
+						"activity": "pl_dp_customer_churn__tru",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					},
+					{
+						"activity": "pl_dp_core_bus_entities__customer__tru",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "pl_dp_customer_churn__ref",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"p_date_exported": "@formatDateTime(pipeline().parameters.p_date_exported, 'yyyy-MM-dd')"
+					}
+				}
 			}
 		],
 		"parameters": {
