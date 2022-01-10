@@ -29,6 +29,11 @@
 				}
 			}
 		],
+		"parameters": {
+			"p_date_exported": {
+				"type": "string"
+			}
+		},
 		"annotations": []
 	}
 }
