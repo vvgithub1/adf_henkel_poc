@@ -17,7 +17,7 @@
 				"typeProperties": {
 					"notebookPath": "/Shared/delta_lake_poc/ingest/refined/customer_refined",
 					"baseParameters": {
-						"p_exported_date": "@formatDateTime(pipeline().parameters.p_date_exported, 'yyyy-MM-dd')"
+						"p_date_exported": "@formatDateTime(pipeline().parameters.p_date_exported, 'yyyy-MM-dd')"
 					}
 				},
 				"linkedServiceName": {
