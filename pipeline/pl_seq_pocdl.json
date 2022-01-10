@@ -12,7 +12,10 @@
 						"referenceName": "pl_di_crm_cust_attr__stg",
 						"type": "PipelineReference"
 					},
-					"waitOnCompletion": true
+					"waitOnCompletion": true,
+					"parameters": {
+						"p_date_exported": "@formatDateTime(pipeline().parameters.p_date_exported, 'yyyy-MM-dd')"
+					}
 				}
 			},
 			{
@@ -25,7 +28,10 @@
 						"referenceName": "pl_dp_customer_churn__stg",
 						"type": "PipelineReference"
 					},
-					"waitOnCompletion": true
+					"waitOnCompletion": true,
+					"parameters": {
+						"p_date_exported": "@formatDateTime(pipeline().parameters.p_date_exported, 'yyyy-MM-dd')"
+					}
 				}
 			}
 		],
