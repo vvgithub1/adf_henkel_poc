@@ -27,7 +27,7 @@
 			}
 		],
 		"parameters": {
-			"p_exported_date": {
+			"p_date_exported": {
 				"type": "string"
 			}
 		},
