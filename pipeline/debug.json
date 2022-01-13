@@ -15,7 +15,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"notebookPath": "/Shared/delta_lake_poc/ingest/ingest_mapping",
+					"notebookPath": "/Shared/delta_lake_poc/ingest/staging/mapping_staging",
 					"baseParameters": {
 						"p_date_exported": {
 							"value": "@formatDateTime(pipeline().parameters.p_date_exported, 'yyyy-MM-dd')",
