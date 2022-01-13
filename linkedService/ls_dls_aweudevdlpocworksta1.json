@@ -1,0 +1,12 @@
+{
+	"name": "ls_dls_aweudevdlpocworksta1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"type": "AzureBlobFS",
+		"annotations": [],
+		"description": "Storage Account for raw data",
+		"typeProperties": {
+			"url": "https://aweudevdlpocworksta1.dfs.core.windows.net"
+		}
+	}
+}

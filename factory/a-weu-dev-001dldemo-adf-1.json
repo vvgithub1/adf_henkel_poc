@@ -1,0 +1,9 @@
+{
+	"name": "a-weu-dev-001dldemo-adf-1",
+	"location": "westeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "6c6eaae5-5ac1-4f23-8204-b8184e459583",
+		"tenantId": "e8701075-0d9e-4ea1-991d-5a0d110a5d29"
+	}
+}
